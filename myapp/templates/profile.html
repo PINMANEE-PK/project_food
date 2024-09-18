@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="flex items-center justify-center h-auto w-full">
+        <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden border border-black">
+            <img class="w-full h-48 object-cover" src="{% static 'image/ppin.jpg' %}" alt="Avatar">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold">นางสาวปิ่นมณี ภูมิเขตร์</h2>
+                <p class="mt-2 text-gray-600">นักศึกษาสาขาเทคโนโลยีสารสนเทศและการสื่อสาร คณะวิทยาศาสตร์ มหาวิทยาลัยอุบลราชธานี เวลาว่างเล่นเกม ไม่งั้นก็นอน...</p>
+                <div class="mt-4 flex space-x-2">
+                    <span class="px-2 py-1 bg-orange-500 text-white text-sm rounded">Unity 💖</span>
+                    <span class="px-2 py-1 bg-red-500 text-white text-sm rounded">MySQL 🫥</span>
+                    <span class="px-2 py-1 bg-yellow-500 text-white text-sm rounded">PHP 🤏</span>
+                    <span class="px-2 py-1 bg-green-500 text-white text-sm rounded">React 😼</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

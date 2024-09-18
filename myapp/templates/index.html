@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="h-screen bg-white-100 p-10">
+        <div class="max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- รายการที่ 1 -->
+            <div class="rounded-lg overflow-hidden bg-white flex flex-col items-center justify-between">
+                <div class="flex flex-col items-center px-6 py-8">
+                    <img class="object-cover object-center w-48 h-48 rounded-full mb-4" src="{% static 'image/f0601.jpg' %}" alt="ผัดไทหมื่นปีห่อใบบัว">
+                    <h1 class="text-2xl text-blacky-600 mb-4 font-mitr font-bold">ผัดไทหมื่นปีห่อใบบัว</h1>
+                    <p class="text-lg mb-4 text-black-600 font-sarabun text-center">ผัดไทหมื่นปีห่อใบบัว ผัดไทยเป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีความโดดเด่นและมีความเป็นเอกลักษณ์ที่มีความประณีตสวยงาม ของจังหวัดอุบลราชธานี </p>
+                    <a href="/food1/" class="bg-gray-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-purple-700 transition duration-300 ease-in-out font-sarabun">เรียนรู้เพิ่มเติม&gt;&gt;</a>
+                </div>
+            </div>
+            <!-- รายการที่ 2 -->
+            <div class="rounded-lg overflow-hidden bg-white flex flex-col items-center justify-between">
+                <div class="flex flex-col items-center px-6 py-8">
+                    <img class="object-cover object-center w-48 h-48 rounded-full mb-4" src="{% static 'image/f0301.jpg' %}" alt="หมี่กะทิ">
+                    <h3 class="text-2xl text-black-600 mb-4 font-mitr font-bold">หมี่กะทิ</h3>
+                    <p class="text-lg mb-4 text-black-600 font-sarabun text-center">หมี่กะทิ เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีส่วนผสมจากวัตถุดิบธรรมชาติที่มีในท้องถิ่น มีความโดดเด่นและมีเอกลักษณ์เฉพาะที่มีความประณีตสวยงาม</p>
+                    <a href="/food2/" class="bg-gray-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-green-700 transition duration-300 ease-in-out font-sarabun">เรียนรู้เพิ่มเติม&gt;&gt;</a>
+                </div>
+            </div>
+            <!-- รายการที่ 3 -->
+            <div class="rounded-lg overflow-hidden bg-white flex flex-col items-center justify-between">
+                <div class="flex flex-col items-center px-6 py-8">
+                    <img class="object-cover object-center w-48 h-48 rounded-full mb-4" src="{% static 'image/f0801.jpg' %}" alt="ลาบปลาคัง">
+                    <h3 class="text-2xl text-black-600 mb-4 font-mitr font-bold">ลาบปลาคัง</h3>
+                    <p class="text-lg mb-4 text-black-600 font-sarabun text-center">ลาบปลาคัง เป็นอาหารพื้นเมืองที่มีสรรพคุณต่อสุขภาพ ตามวิถีภูมิปัญญาท้องถิ่น ของจังหวัดอุบลราชธานี ที่ได้สืบทอดกันมารุ่นต่อรุ่น มีความโดดเด่นและมีความเป็นเอกลักษณ์ของจังหวัดอุบลราชธานี เป็นต้นตำรับเมนูสมุนไพรโบราณที่มีมาช้านานทั้งในเรื่องของรสชาติที่กลมกล่อม เครื่องปรุงล้วนเป็นสมุนไพรจากธรรมชาติ มีคุณค่าทางสมุนไพรสูง</p>
+                    <a href="/food3/" class="bg-gray-600 text-white py-2 px-4 rounded-lg text-lg hover:bg-yellow-700 transition duration-300 ease-in-out font-sarabun">เรียนรู้เพิ่มเติม&gt;&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
